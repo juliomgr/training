@@ -36,16 +36,17 @@ jobs:
 
   #test
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: General Test
         run: |
-          npm test
+          node --test
 
   # Deploy Job
   deploy:
    
-    needs: build
+    needs: test
     
     runs-on: ubuntu-latest
     steps:
