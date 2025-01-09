@@ -34,6 +34,13 @@ jobs:
           name: poduction file
           path: ./todo/build
 
+  #test
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      -name: General Test
+      -run: node --test
+
   # Deploy Job
   deploy:
    
