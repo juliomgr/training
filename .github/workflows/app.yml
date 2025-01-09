@@ -41,7 +41,7 @@ jobs:
     steps:
       - name: General Test
         run: |
-          node --test
+          npm test
 
   # Deploy Job
   deploy:
