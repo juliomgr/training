@@ -38,8 +38,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      -name: General Test
-      -run: node --test
+      - name: General Test
+        run: |
+          node --test
 
   # Deploy Job
   deploy:
