@@ -41,6 +41,7 @@ jobs:
     steps:
       - name: General Test
         run: |
+          cd todo
           npm test
 
   # Deploy Job
